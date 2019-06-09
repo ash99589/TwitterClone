@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+    <ImageView
+        android:id="@+id/birdd"
+        android:layout_width="171dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="423dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bd" />
+
+    <EditText
+        android:id="@+id/edtLoginEnail"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:hint="enter email or username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birdd" />
+
+    <EditText
+        android:id="@+id/edtLoginP"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="287dp"
+        android:ems="10"
+        android:hint="enter password"
+        android:inputType="textPersonName|text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtLoginEnail" />
+
+    <Button
+        android:id="@+id/btnLogin2"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="195dp"
+        android:text="log in "
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtLoginP" />
+
+    <Button
+        android:id="@+id/btnSignUp2"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="107dp"
+        android:text="sign up "
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
